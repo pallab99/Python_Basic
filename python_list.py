@@ -1,4 +1,5 @@
-thisList = ["apple", "banana", "cherry"]
+from typing import List
+thisList: List[str] = ["apple", "pineapple", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 thisTuple = ("kiwi", "orange")
 thisList.insert(2, "mango")  # insert mango at position 2

@@ -2,14 +2,15 @@
 # or immutable as it also is called.
 
 # add items to the tuple
-thisTuple = ("apple", "banana", "cherry")
-newList = list(thisTuple)
+from typing import Tuple, List
+thisTuple: Tuple[str, str, str] = ("apple", "banana", "cherry")
+newList: List[str] = list(thisTuple)
 newList.append("mango")
 thisTuple = tuple(newList)
 print(thisTuple)
 
 # add tuple to tuple
-y = ("orange",)
+y: Tuple[str, str, str] = ("orange", "orange", "orange",)
 thisTuple += y
 print(thisTuple)
 
